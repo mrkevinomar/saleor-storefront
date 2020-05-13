@@ -2,7 +2,7 @@ import { generatePageUrl } from "./utils";
 
 export const BASE_URL = "/";
 export const PRODUCTS_PER_PAGE = 6;
-export const SUPPORT_EMAIL = "support@example.com";
+export const SUPPORT_EMAIL = "ferazo@feconsultoresconstructores.com";
 export const PROVIDERS = {
   BRAINTREE: {
     label: "Braintree",
@@ -24,31 +24,31 @@ export const STATIC_PAGES = [
 export const SOCIAL_MEDIA = [
   {
     ariaLabel: "facebook",
-    href: "https://www.facebook.com/mirumeelabs/",
+    href: "https://www.facebook.com/NuevoEdificioAguaMarina/",
     path: require("../images/facebook-icon.svg"),
   },
   {
     ariaLabel: "instagram",
-    href: "https://www.instagram.com/mirumeelabs/",
+    href: "https://www.instagram.com/feconsconst/",
     path: require("../images/instagram-icon.svg"),
   },
-  {
+  /*{
     ariaLabel: "twitter",
     href: "https://twitter.com/getsaleor",
     path: require("../images/twitter-icon.svg"),
-  },
+  },*/
   {
     ariaLabel: "youtube",
-    href: "https://www.youtube.com/channel/UCg_ptb-U75e7BprLCGS4s1g/videos",
+    href: "https://www.youtube.com/channel/UCAJvExsJ3_dKZ2KUXytZtcQ/videos",
     path: require("../images/youtube-icon.svg"),
   },
 ];
 export const META_DEFAULTS = {
   custom: [],
   description:
-    "Open-source PWA storefront built with Saleor's e-commerce GraphQL API. Written with React and TypeScript.",
+    "Tienda Virtual FE Consultores&Constructores",
   image: `${window.location.origin}${require("../images/logo-fe.png")}`,
-  title: "Demo PWA Storefront – Saleor Commerce",
+  title: "FE Tienda Virtual",
   type: "website",
   url: window.location.origin,
 };
@@ -62,8 +62,8 @@ export const CHECKOUT_STEPS = [
   {
     index: 0,
     link: "/checkout/address",
-    name: "Address",
-    nextActionName: "Continue to Shipping",
+    name: "Dirección",
+    nextActionName: "Continuar a Envío",
     nextStepLink: "/checkout/shipping",
     onlyIfShippingRequired: true,
     step: CheckoutStep.Address,
@@ -71,8 +71,8 @@ export const CHECKOUT_STEPS = [
   {
     index: 1,
     link: "/checkout/shipping",
-    name: "Shipping",
-    nextActionName: "Continue to Payment",
+    name: "Envío",
+    nextActionName: "Continuar a Pago",
     nextStepLink: "/checkout/payment",
     onlyIfShippingRequired: true,
     step: CheckoutStep.Shipping,
@@ -80,8 +80,8 @@ export const CHECKOUT_STEPS = [
   {
     index: 2,
     link: "/checkout/payment",
-    name: "Payment",
-    nextActionName: "Continue to Review",
+    name: "Pago",
+    nextActionName: "Revisar Pedido",
     nextStepLink: "/checkout/review",
     onlyIfShippingRequired: false,
     step: CheckoutStep.Payment,
@@ -89,8 +89,8 @@ export const CHECKOUT_STEPS = [
   {
     index: 3,
     link: "/checkout/review",
-    name: "Review",
-    nextActionName: "Place order",
+    name: "Resumen",
+    nextActionName: "Confirmar Pedido",
     nextStepLink: "/order-finalized",
     onlyIfShippingRequired: false,
     step: CheckoutStep.Review,
