@@ -1,5 +1,5 @@
 {
-  "baseUrl": "http://localhost:3000",
+  "baseUrl": "http://3.14.248.106:3000",
   "env": {
     "API_URI": "https://pwa.demo.saleor.rocks/graphql/"
   },
