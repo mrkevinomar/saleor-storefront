@@ -5,7 +5,7 @@ export const baseFontColor = "#323232";
 export const baseFontColorSemiTransparent = "rgba(50,50,50,0.6)";
 export const baseFontColorTransparent = "rgba(50,50,50,0.1)";
 export const black = "#323232";
-export const blue = "rgb(33,18,94)";
+export const blue = "rgb(55,63,111)";
 export const blueDark = "#190c4e";
 export const blueLight = "#513CA3";
 export const blueOverlay = `rgba(33,18,94,0.1)`;
@@ -24,10 +24,11 @@ export const turquoiseTransparent = "rgba(6, 132, 123, 0.1)";
 export const white = "#fff";
 export const tabelGray = "#eaeaea";
 export const darkGreen = "#06847B";
+export const darkBlue = "#373f6f";
 
 // theme colors
 export const theme = {
-  activeMenuOption: darkGreen,
+  activeMenuOption: darkBlue,
   autofill: autofillColor,
   autofillSelected: autofillColorSelected,
   baseFont: baseFontColor,
@@ -42,11 +43,11 @@ export const theme = {
   light: grayLight,
   lightFont: gray,
   listAttributeName: baseFontColorSemiTransparent,
-  listBullet: darkGreen,
+  listBullet: darkBlue,
   overlay: overlayColor,
-  primary: turquoise,
-  primaryDark: turquoiseDark,
-  primaryLight: turquoiseLight,
+  primary: blue,
+  primaryDark: blueDark,
+  primaryLight: blueLight,
   primaryTransparent: turquoiseTransparent,
   secondary: blue,
   secondaryDark: blueDark,
@@ -54,10 +55,10 @@ export const theme = {
   secondaryOverlay: blueOverlay,
   secondaryOverlayDark: blueOverlayDark,
   success: green,
-  tabTitle: darkGreen,
+  tabTitle: darkBlue,
   tableDivider: tabelGray,
   tabsBorder: baseFontColorTransparent,
-  thumbnailBorder: darkGreen,
+  thumbnailBorder: darkBlue,
   white,
 };
 
