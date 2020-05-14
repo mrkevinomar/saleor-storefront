@@ -3,7 +3,7 @@ const HotModulePlugin = require("webpack").HotModuleReplacementPlugin;
 
 module.exports = ({ sourceDir, distDir }) => ({
   devServer: {
-     port: 3000, 
+     port: 80, 
      hotOnly: true ,
      historyApiFallback: true
   },
