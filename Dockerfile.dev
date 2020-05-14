@@ -6,5 +6,6 @@ COPY . .
 ARG API_URI
 ENV API_URI ${API_URI:-http://localhost:8000/graphql/}
 
+EXPOSE 80
 EXPOSE 3000
 CMD npm start -- --host 0.0.0.0

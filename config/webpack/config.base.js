@@ -10,7 +10,10 @@ if (!process.env.API_URI) {
 }
 
 module.exports = ({ sourceDir, distDir }) => ({
-  devServer: { host: '0.0.0.0', disableHostCheck: true },
+  devServer: {
+    host: '0.0.0.0', 
+    disableHostCheck: true ,  
+ },
   resolve: {
     alias: {
       "react-dom": "@hot-loader/react-dom",
