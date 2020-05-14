@@ -10,10 +10,6 @@ if (!process.env.API_URI) {
 }
 
 module.exports = ({ sourceDir, distDir }) => ({
-  devServer: {
-    inline:true,
-    port: 80
-  },
   resolve: {
     alias: {
       "react-dom": "@hot-loader/react-dom",
