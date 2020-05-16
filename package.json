@@ -162,7 +162,7 @@
     "test": "jest --runInBand --config .jest/config.json",
     "start": "cross-env NODE_ENV=develop webpack-dev-server",
     "start:worker": "npm run start -- --service-worker",
-    "build": "webpack -p  NODE_ENV=production --mode production",
+    "build": "webpack -p  --mode production",
     "watch": "webpack -d --watch",
     "storybook": "start-storybook -p 9002",
     "@storybook": "start-storybook -p 9002",
