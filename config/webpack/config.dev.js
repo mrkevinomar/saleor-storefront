@@ -2,7 +2,14 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HotModulePlugin = require("webpack").HotModuleReplacementPlugin;
 
 module.exports = ({ sourceDir, distDir }) => ({
-  output: {
+  devServer: {
+     port: 80, 
+     hotOnly: true ,
+     historyApiFallback: true
+  },
+  mode: 'development',
+  watch: true,
+    output: {
     filename: "js/[name].js"
   },
   module: {
