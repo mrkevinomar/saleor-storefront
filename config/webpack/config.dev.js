@@ -5,7 +5,9 @@ module.exports = ({ sourceDir, distDir }) => ({
   devServer: {
      port: 80, 
      hotOnly: true ,
-     historyApiFallback: true
+     historyApiFallback: true,
+     host: '0.0.0.0', 
+     disableHostCheck: true ,  
   },
   mode: 'development',
   watch: true,

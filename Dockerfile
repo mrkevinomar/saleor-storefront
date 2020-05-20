@@ -1,6 +1,7 @@
 FROM node:10 as builder
 WORKDIR /app
 COPY package*.json ./
+RUN npm cache clean --force
 RUN npm install
 COPY . .
 ARG API_URI
