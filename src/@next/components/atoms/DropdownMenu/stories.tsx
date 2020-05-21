@@ -16,9 +16,9 @@ const Container = styled.div`
 const onClick = action("onClick");
 const header = <IconButton size={19} name="edit" onClick={onClick} />;
 const items = [
-  { onClick, content: <span>MY ACCOUNT</span> },
-  { onClick, content: <span>ORDER HISTORY</span> },
-  { onClick, content: <span>LOG OUT</span> },
+  { onClick, content: <span>MI CUENTA</span> },
+  { onClick, content: <span>HISTORIAL DE PEDIDOS</span> },
+  { onClick, content: <span>CERRAR SESSIÓN</span> },
 ];
 
 storiesOf("@components/atoms/DropdownMenu", module)

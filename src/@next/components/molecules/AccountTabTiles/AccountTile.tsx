@@ -21,10 +21,10 @@ export const AccountTile: React.FC = () => {
     <S.TileWrapper>
       <Tile>
         <S.Wrapper>
-          <S.Header>MY DATA</S.Header>
+          <S.Header>MIS DATOS</S.Header>
           <S.Content>
             <S.HeaderSmall>
-              Personal details
+              Detalles personales
               {!isEditing && (
                 <IconButton
                   name="edit"

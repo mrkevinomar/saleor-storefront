@@ -45,10 +45,10 @@ const Page: React.FC<{
     <>
       {!guest && (
         <Link className="order-details__link" to={orderHistoryUrl}>
-          Go back to Order History
+          Regresar al historial
         </Link>
       )}
-      <h3>Your order nr: {order.number}</h3>
+      <h3>Tu orden nr: {order.number}</h3>
       <p className="order-details__status">
         {order.paymentStatusDisplay} / {order.statusDisplay}
       </p>
@@ -60,7 +60,7 @@ const Page: React.FC<{
       />
       <div className="order-details__summary">
         <div>
-          <h4>Shipping Address</h4>
+          <h4>Dirección de Envío</h4>
           <AddressSummary
             address={order.shippingAddress}
             email={order.userEmail}

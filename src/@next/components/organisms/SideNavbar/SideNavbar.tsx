@@ -78,7 +78,7 @@ export const SideNavbar: React.FC<IProps> = ({
           <TopBar onHide={handleHide}>
             <S.LogoWrapper path={LogoSmall} />
           </TopBar>
-          <S.Link to="/">Home</S.Link>
+          <S.Link to="/">Inicio</S.Link>
           {items.map((item, index) =>
             item.children.length > 0 ? (
               <MenuItem
@@ -98,7 +98,7 @@ export const SideNavbar: React.FC<IProps> = ({
                 <S.IconWrapper>
                   <Icon name="heart" size={24} />
                 </S.IconWrapper>
-                <span>my wishlist</span>
+                <span>Mi lista de deseos</span>
               </S.Link>
             </S.Item>
             <S.Item>
@@ -106,7 +106,7 @@ export const SideNavbar: React.FC<IProps> = ({
                 <S.IconWrapper>
                   <Icon name="profile" size={24} />
                 </S.IconWrapper>
-                <span>my profile</span>
+                <span>Mi perfil</span>
               </S.Link>
             </S.Item>
             <S.Item>

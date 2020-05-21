@@ -23,8 +23,8 @@ const showSuccessNotification = (
     alert.show(
       {
         title: data.accountRegister.requiresConfirmation
-          ? "Please check your e-mail for further instructions"
-          : "New user has been created",
+          ? "Por favor, compruebe su correo electrónico para obtener más instrucciones"
+          : "Se ha creado un nuevo usuario",
       },
       { type: "success", timeout: 5000 }
     );
@@ -51,20 +51,20 @@ const RegisterForm: React.FC<{ hide: () => void }> = ({ hide }) => {
             <TextField
               name="email"
               autoComplete="email"
-              label="Email Address"
+              label="Correo"
               type="email"
               required
             />
             <TextField
               name="password"
               autoComplete="password"
-              label="Password"
+              label="Contraseña"
               type="password"
               required
             />
             <div className="login__content__button">
               <Button type="submit" {...(loading && { disabled: true })}>
-                {loading ? "Loading" : "Register"}
+                {loading ? "Cargando" : "Registrarse"}
               </Button>
             </div>
           </Form>

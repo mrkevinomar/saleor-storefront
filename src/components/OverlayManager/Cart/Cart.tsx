@@ -53,13 +53,13 @@ const Cart: React.FC<{ overlay: OverlayContextInterface }> = ({ overlay }) => {
           <div className="overlay__header">
             <ReactSVG path={cartImg} className="overlay__header__cart-icon" />
             <div className="overlay__header-text">
-              My bag,{" "}
+              Mi Carrito,{" "}
               <span className="overlay__header-text-items">
                 {items?.reduce(
                   (prevVal, currVal) => prevVal + currVal.quantity,
                   0
                 ) || 0}{" "}
-                items
+                elementos
               </span>
             </div>
             <ReactSVG
@@ -84,7 +84,7 @@ const Cart: React.FC<{ overlay: OverlayContextInterface }> = ({ overlay }) => {
 
                 {shippingTaxedPrice && shippingTaxedPrice.gross.amount !== 0 && (
                   <div className="cart__footer__price">
-                    <span>Shipping</span>
+                    <span>Envío</span>
                     <span>
                       <TaxedMoney
                         data-cy="cartPageShippingPrice"
@@ -96,7 +96,7 @@ const Cart: React.FC<{ overlay: OverlayContextInterface }> = ({ overlay }) => {
 
                 {promoTaxedPrice && promoTaxedPrice.gross.amount !== 0 && (
                   <div className="cart__footer__price">
-                    <span>Promo code</span>
+                    <span>Código Promocional</span>
                     <span>
                       <TaxedMoney
                         data-cy="cartPagePromoCodePrice"
@@ -122,12 +122,12 @@ const Cart: React.FC<{ overlay: OverlayContextInterface }> = ({ overlay }) => {
                       token: null,
                     })}
                   >
-                    <Button secondary>Go to my bag</Button>
+                    <Button secondary>Ir a mi carrito</Button>
                   </Link>
                 </div>
                 <div className="cart__footer__button">
                   <Link to={user ? checkoutUrl : checkoutLoginUrl}>
-                    <Button>Checkout</Button>
+                    <Button>Pagar</Button>
                   </Link>
                 </div>
               </div>

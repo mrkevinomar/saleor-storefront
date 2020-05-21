@@ -51,7 +51,7 @@ const CartSummary: React.FC<IProps> = ({
         data-cy="cartSummaryTitle"
         onClick={() => setMobileCartOpened(!mobileCartOpened)}
       >
-        Cart Summary
+        Resumen del carrito
         <S.ArrowUp mobileCartOpened={mobileCartOpened}>
           <Icon name="arrow_up" size={24} />
         </S.ArrowUp>

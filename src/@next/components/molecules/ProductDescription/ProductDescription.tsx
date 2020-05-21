@@ -31,7 +31,7 @@ export const ProductDescription: React.FC<IProps> = ({
             setActiveTab(TABS.DESCRIPTION);
           }}
         >
-          DESCRIPTION
+          DESCRIPCIÓN
         </S.TabTitle>
         <S.TabTitle
           active={activeTab === TABS.ATTRIBUTES}
@@ -44,7 +44,7 @@ export const ProductDescription: React.FC<IProps> = ({
             setActiveTab(TABS.ATTRIBUTES);
           }}
         >
-          ATTRIBUTES
+          ATRIBUTOS
         </S.TabTitle>
       </S.Tabs>
       {activeTab === TABS.DESCRIPTION &&

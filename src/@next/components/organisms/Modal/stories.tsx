@@ -12,7 +12,7 @@ if (!portalRoot) {
   document.body.appendChild(portalRoot);
 }
 
-const Children = () => <div>Content</div>;
+const Children = () => <div>Contenido</div>;
 
 const DEFAULT_PROPS = {
   children: Children,

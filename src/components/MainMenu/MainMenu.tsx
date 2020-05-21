@@ -123,23 +123,23 @@ const MainMenu: React.FC = () => {
                           content={
                             <ul className="main-menu__dropdown">
                               <li data-testid="my_account__link">
-                                <Link to={appPaths.accountUrl}>My Account</Link>
+                                <Link to={appPaths.accountUrl}>Mi Cuenta</Link>
                               </li>
                               <li data-testid="order_history__link">
                                 <Link to={appPaths.orderHistoryUrl}>
-                                  Order history
+                                  Historial de pedidos
                                 </Link>
                               </li>
                               <li data-testid="address_book__link">
                                 <Link to={appPaths.addressBookUrl}>
-                                  Address book
+                                  Direcciones
                                 </Link>
                               </li>
                               <li
                                 onClick={handleSignOut}
                                 data-testid="logout-link"
                               >
-                                Log Out
+                                Cerrar Sesión
                               </li>
                             </ul>
                           }
@@ -191,7 +191,7 @@ const MainMenu: React.FC = () => {
               >
                 <Media
                   query={{ minWidth: mediumScreen }}
-                  render={() => <span>Search</span>}
+                  render={() => <span>Buscar</span>}
                 />
                 <ReactSVG path={searchImg} />
               </li>

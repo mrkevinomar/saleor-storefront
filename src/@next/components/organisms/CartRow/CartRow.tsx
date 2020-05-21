@@ -87,7 +87,7 @@ export const CartRow: React.FC<IProps> = ({
   const quantityErrors = isTooMuch
     ? [
         {
-          message: `Maximum quantity is ${maxQuantity}`,
+          message: `La cantidad maxiama es ${maxQuantity}`,
         },
       ]
     : undefined;
@@ -122,7 +122,7 @@ export const CartRow: React.FC<IProps> = ({
         <TextField
           data-cy={`cartPageItem${index}QuantityInput`}
           name="quantity"
-          label="Quantity"
+          label="Cantidad"
           value={tempQuantity}
           onBlur={handleBlurQuantityInput}
           onChange={handleQuantityChange}
@@ -141,13 +141,13 @@ export const CartRow: React.FC<IProps> = ({
 
       <S.TotalPrice>
         <S.PriceLabel>
-          <S.LightFont>Total Price:</S.LightFont>
+          <S.LightFont>Precio Total:</S.LightFont>
         </S.PriceLabel>
         <p>{totalPrice}</p>
       </S.TotalPrice>
       <S.UnitPrice>
         <S.PriceLabel>
-          <S.LightFont>Price:</S.LightFont>
+          <S.LightFont>Precio:</S.LightFont>
         </S.PriceLabel>
         <p>{unitPrice}</p>
       </S.UnitPrice>

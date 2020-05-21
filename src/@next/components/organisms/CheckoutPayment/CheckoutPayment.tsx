@@ -89,7 +89,7 @@ const CheckoutPayment: React.FC<IProps> = ({
   return (
     <S.Wrapper>
       <section>
-        <S.Title data-cy="checkoutPageSubtitle">BILLING ADDRESS</S.Title>
+        <S.Title data-cy="checkoutPageSubtitle">DIRECCIÓN DE FACTURACIÓN</S.Title>
         {billingAsShippingPossible && (
           <Checkbox
             data-cy="checkoutPaymentBillingAsShippingCheckbox"
@@ -99,7 +99,7 @@ const CheckoutPayment: React.FC<IProps> = ({
               setBillingAsShippingAddress(!billingAsShippingAddress)
             }
           >
-            Same as shipping address
+            La misma que la dirección de envío
           </Checkbox>
         )}
         {!billingAsShippingAddress && (
@@ -137,14 +137,14 @@ const CheckoutPayment: React.FC<IProps> = ({
       </section>
       <S.Divider />
       <section>
-        <S.Title data-cy="checkoutPageSubtitle">PAYMENT METHOD</S.Title>
+        <S.Title data-cy="checkoutPageSubtitle">MÉTODO DE PAGO</S.Title>
         <Checkbox
           data-cy="checkoutPaymentPromoCodeCheckbox"
           name="payment-promo-code"
           checked={showPromoCodeForm}
           onChange={handleChangeShowPromoCodeForm}
         >
-          Do you have a gift card voucher or discount code?
+          ¿Tiene un vale de tarjeta de regalo o un código de descuento?
         </Checkbox>
         {showPromoCodeForm && (
           <S.DiscountField>

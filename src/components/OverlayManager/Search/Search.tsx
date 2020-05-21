@@ -138,7 +138,7 @@ class Search extends React.Component<SearchProps, SearchState> {
                                     btnRef={this.submitBtnRef}
                                     type="submit"
                                   >
-                                    Show all results
+                                    Mostrar todos
                                   </Button>
                                 )}
                               </div>

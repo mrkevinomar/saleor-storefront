@@ -8,10 +8,10 @@ import * as S from "./styles";
 const CartHeader: React.FC = () => {
   return (
     <S.Wrapper>
-      <S.Column>Products</S.Column>
-      <S.Column>Price</S.Column>
-      <S.Column>Quantity</S.Column>
-      <S.Column>Total Price</S.Column>
+      <S.Column>Productos</S.Column>
+      <S.Column>Precio</S.Column>
+      <S.Column>Cantidad</S.Column>
+      <S.Column>Precio Total</S.Column>
     </S.Wrapper>
   );
 };

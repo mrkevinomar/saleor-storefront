@@ -6,10 +6,10 @@ import * as S from "./styles";
 import { IProps } from "./types";
 
 const defaultShippingAddress = (
-  <S.MenuItem>Set as default shipping address</S.MenuItem>
+  <S.MenuItem>Establecer como dirección de envío predeterminada</S.MenuItem>
 );
 const defaultBillingAddress = (
-  <S.MenuItem>Set as default billing address</S.MenuItem>
+  <S.MenuItem>Establecer como dirección de facturación predeterminada</S.MenuItem>
 );
 
 export const AddressTile: React.FC<IProps> = ({
@@ -40,11 +40,11 @@ export const AddressTile: React.FC<IProps> = ({
       />
 
       {address.isDefaultBillingAddress && address.isDefaultShippingAddress
-        ? "Default Address"
+        ? "Dirección por defecto"
         : address.isDefaultShippingAddress
-        ? "Default Shipping Address"
+        ? "Dirección de envío por defecto"
         : address.isDefaultBillingAddress
-        ? "Default Billing Address"
+        ? "Dirección de facturación por defecto"
         : null}
     </S.HeaderContent>
   );

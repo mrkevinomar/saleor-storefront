@@ -45,7 +45,7 @@ class Login extends React.Component<
         <div className="login">
           <Online>
             <div className="overlay__header">
-              <p className="overlay__header-text">Saleor account</p>
+              <p className="overlay__header-text">Cuenta FE</p>
               <ReactSVG
                 path={closeImg}
                 onClick={hide}
@@ -57,13 +57,13 @@ class Login extends React.Component<
                 onClick={() => this.changeActiveTab("login")}
                 className={this.state.active === "login" ? "active-tab" : ""}
               >
-                Sign in to account
+                Iniciar Sesión
               </span>
               <span
                 onClick={() => this.changeActiveTab("register")}
                 className={this.state.active === "register" ? "active-tab" : ""}
               >
-                Register new account
+                Registrarse
               </span>
             </div>
             <div className="login__content">

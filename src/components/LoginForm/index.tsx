@@ -31,20 +31,20 @@ const LoginForm: React.FC<ILoginForm> = ({ hide }) => {
         <TextField
           name="email"
           autoComplete="email"
-          label="Email Address"
+          label="Correo"
           type="email"
           required
         />
         <TextField
           name="password"
           autoComplete="password"
-          label="Password"
+          label="Contraseña"
           type="password"
           required
         />
         <div className="login-form__button">
           <Button type="submit" {...(loading && { disabled: true })}>
-            {loading ? "Loading" : "Sign in"}
+            {loading ? "Cargando" : "Iniciar Sesión"}
           </Button>
         </div>
       </Form>

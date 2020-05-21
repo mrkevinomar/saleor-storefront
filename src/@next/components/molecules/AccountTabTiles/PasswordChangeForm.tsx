@@ -45,17 +45,17 @@ export const PasswordChangeForm: React.FC<{
             newPassword?: string;
           } = {};
           if (!values.confirmPassword) {
-            errors.confirmPassword = "Required field";
+            errors.confirmPassword = "Requerido";
           }
           if (!values.newPassword) {
-            errors.newPassword = "Required field";
+            errors.newPassword = "Requerido";
           }
           if (!values.oldPassword) {
-            errors.oldPassword = "Required field";
+            errors.oldPassword = "Requerido";
           }
           if (values.confirmPassword !== values.newPassword) {
-            errors.confirmPassword = "Passwords do not match";
-            errors.newPassword = "Passwords do not match";
+            errors.confirmPassword = "Las contraseñas no coinciden";
+            errors.newPassword = "Las contraseñas no coinciden";
           }
           return errors;
         }}
@@ -74,7 +74,7 @@ export const PasswordChangeForm: React.FC<{
             <S.Form onSubmit={handleSubmit}>
               <TextField
                 name="oldPassword"
-                label="Old Password"
+                label="Contraseña Anterior"
                 type="password"
                 value={values.oldPassword}
                 onBlur={handleBlur}
@@ -87,7 +87,7 @@ export const PasswordChangeForm: React.FC<{
               />
               <TextField
                 name="newPassword"
-                label="New Password"
+                label="Nueva Contraseña"
                 type="password"
                 value={values.newPassword}
                 onBlur={handleBlur}
@@ -100,7 +100,7 @@ export const PasswordChangeForm: React.FC<{
               />
               <TextField
                 name="confirmPassword"
-                label="Confirm Password"
+                label="Confirmar Contraseña"
                 type="password"
                 value={values.confirmPassword}
                 onBlur={handleBlur}
@@ -113,14 +113,14 @@ export const PasswordChangeForm: React.FC<{
               />
               <S.FormButtons>
                 <ButtonLink type="button" color="secondary" onClick={hide}>
-                  Cancel
+                  Cancelar
                 </ButtonLink>
                 <Button
                   type="submit"
                   disabled={isSubmitting || !isValid}
                   size="sm"
                 >
-                  Save
+                  Guardar
                 </Button>
               </S.FormButtons>
             </S.Form>

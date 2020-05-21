@@ -59,14 +59,14 @@ export const AccountUpdateForm: React.FC<{
               </S.ContentEditOneLine>
               <S.FormButtons>
                 <ButtonLink type="button" color="secondary" onClick={hide}>
-                  Cancel
+                  Cancelar
                 </ButtonLink>
                 <Button
                   type="submit"
                   disabled={isSubmitting || !isValid}
                   size="sm"
                 >
-                  Save
+                  Guardar
                 </Button>
               </S.FormButtons>
             </S.Form>

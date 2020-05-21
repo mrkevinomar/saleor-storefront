@@ -102,27 +102,27 @@ export const View: React.FC<ViewProps> = ({ match }) => {
       value: null,
     },
     {
-      label: "Price Low-High",
+      label: "Precio Menor-Mayor",
       value: "price",
     },
     {
-      label: "Price High-Low",
+      label: "Precio Mayor-Menor",
       value: "-price",
     },
     {
-      label: "Name Increasing",
+      label: "Nombre Creciente",
       value: "name",
     },
     {
-      label: "Name Decreasing",
+      label: "Nombre Decreciente",
       value: "-name",
     },
     {
-      label: "Last updated Ascending",
+      label: "Última actualización Ascendente",
       value: "updated_at",
     },
     {
-      label: "Last updated Descending",
+      label: "Última actualización Descendente",
       value: "-updated_at",
     },
   ];

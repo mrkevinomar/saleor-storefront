@@ -56,21 +56,21 @@ const Table: React.FC<TableProps> = ({
           {discount && (
             <CostRow
               mediumScreen={mediumScreen}
-              heading={`Discount: ${discountName}`}
+              heading={`Descuento: ${discountName}`}
               cost={discount}
             />
           )}
           {deliveryCost && (
             <CostRow
               mediumScreen={mediumScreen}
-              heading="Delivery Cost"
+              heading="Costo de Envío"
               cost={deliveryCost}
             />
           )}
           {totalCost && (
             <CostRow
               mediumScreen={mediumScreen}
-              heading="Total Cost"
+              heading="Costo Total"
               cost={totalCost}
             />
           )}
