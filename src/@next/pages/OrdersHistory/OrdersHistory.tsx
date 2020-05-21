@@ -35,7 +35,7 @@ export const OrdersHistory: React.FC<IProps> = ({ history }: IProps) => {
               });
             }}
           >
-            Load more
+            Cargar más
           </Button>
         </S.Wrapper>
       )}
