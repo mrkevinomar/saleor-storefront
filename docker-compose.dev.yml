@@ -29,7 +29,6 @@ services:
     links:
       - storefront:storefront
     depends_on:
-      - 
       - storefront
     networks:
       - saleor-backend-tier
